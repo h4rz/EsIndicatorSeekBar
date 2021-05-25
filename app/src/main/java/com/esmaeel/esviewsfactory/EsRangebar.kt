@@ -88,9 +88,9 @@ class EsRangebar : LinearLayout {
                         startBar.progress = rightValue.toInt()
                         startBar.post {
                             if (rightValue.toInt() - indicatorMinValue > (indicatorMinValue + indicatorMaxValue)/4) {
-                                startBar.setPadding(0, 0, (padding * 1.5).toInt(), 0)
+                                startBar.setPadding(0, 0, (padding * 1.3).toInt(), 0)
                             } else {
-                                startBar.setPadding(padding, 0, (padding * 1.5).toInt(), 0)
+                                startBar.setPadding(padding, 0, (padding * 1.3).toInt(), 0)
                             }
                         }
                     }
@@ -99,9 +99,9 @@ class EsRangebar : LinearLayout {
                         startBar.progress = leftValue.toInt()
                         startBar.post {
                             if (indicatorMaxValue - leftValue.toInt() > (indicatorMinValue + indicatorMaxValue)/4) {
-                                startBar.setPadding(padding, 0, (padding * 1.5).toInt(), 0)
+                                startBar.setPadding(padding, 0, 0, 0)
                             } else {
-                                startBar.setPadding(padding, 0, (padding * 1.5).toInt(), 0)
+                                startBar.setPadding(padding, 0, (padding * 1.3).toInt(), 0)
                             }
                         }
                     }
