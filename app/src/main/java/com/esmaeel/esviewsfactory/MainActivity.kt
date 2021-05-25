@@ -1,9 +1,8 @@
 package com.esmaeel.esviewsfactory
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.indicator.view.*
 
 class MainActivity : AppCompatActivity() {
 

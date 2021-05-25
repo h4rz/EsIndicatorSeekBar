@@ -4,7 +4,6 @@ import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Color
-import android.graphics.Paint
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.text.TextPaint
@@ -78,7 +77,7 @@ class EsSeekbar : LinearLayout {
     }
 
 
-    fun doTheMagicIn(context: Context , indicatorLayout : Int = R.layout.indicator ){
+    fun doTheMagicIn(context: Context , indicatorLayout : Int = R.layout.indicator_start ){
         indicatorView = LayoutInflater.from(context).inflate(indicatorLayout, null, false)
         distanceSeekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar, progressValue: Int, b: Boolean) {
